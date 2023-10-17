@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SECONDARY MATHEMATICS CALCULATOR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <div class="calculator">
+      <h1 >SECONDARY MATHEMATICS CALCULATOR</h1>
+      <input type="text" id="display" disabled>
+      <br>
+      <input type="button" value="7" onclick="addToDisplay('7')">
+      <input type="button" value="8" onclick="addToDisplay('8')">
+      <input type="button" value="9" onclick="addToDisplay('9')">
+      <input type="button" value="/" onclick="addToDisplay('/')">
+      <br>
+      <input type="button" value="4" onclick="addToDisplay('4')">
+      <input type="button" value="5" onclick="addToDisplay('5')">
+      <input type="button" value="6" onclick="addToDisplay('6')">
+      <input type="button" value="-" onclick="addToDisplay('-')">
+      <br>
+      <input type="button" value="1" onclick="addToDisplay('1')">
+      <input type="button" value="2" onclick="addToDisplay('2')">
+      <input type="button" value="3" onclick="addToDisplay('3')">
+      <input type="button" value="+" onclick="addToDisplay('+')">
+      <br>
+      <input type="button" value="C" onclick="clearDisplay()">
+      <input type="button" value="0" onclick="addToDisplay('0')">
+      <input type="button" value="=" onclick="calculate()">
+      <input type="button" value="*" onclick="addToDisplay('*')">
+      <input type="button" value="." onclick="addDecimal()">
+      <br>
+      <input type="button" value="DEL" onclick="deleteLastKey()">
+    </div>
+
+    <div class="steps-container">
+      <div id="steps" class="calculator-steps"></div>
+    </div>
+
+    <div class="save-container">
+      <button class="save-button" onclick="saveStep()">Save Step</button>
+    </div>
+  </div>
+
+  <div id="savedCalculations" class="calculator-saved"></div>
+  <script src="function.js"></script>
+</body>
+</html>

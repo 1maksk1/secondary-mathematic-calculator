@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    
+  }
+  h1{
+   font-size: 27px;
+   text-align: center;
+   color: white;
+  }
+  .calculator-container {
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+    
+  }
+  .calculator {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #020202;
+    border-radius: 5px;
+    background-color: #1ea1e3;
+    box-shadow: 20px 15px rgb(0, 0, 0);
+  }
+  .steps-container {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #1ea1e3;
+    float: left;
+    box-shadow: 20px 15px rgb(0, 0, 0);
+    color: white;
+  }
+  .save-container {
+    width: 50px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+   input[type="button"] {
+    width: 53px;
+    height: 40px;
+    margin: 2px;
+    font-size: 18px;
+    background-color: #0761ba;
+    color: white;
+  }
+  input[type="text"]{
+    width: 90;
+    height: 40px;
+    margin: 2px;
+    font-size: 18px;
+    background-color: white;
+  }
+  .delete-button {
+    background-color: #ff5555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70px;
+  }
+  .save-button {
+    background-color: #55aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .delete-step-button {
+    background-color: #ff5555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 80px;
+    margin-left: 5px;
+  }
+  #steps {
+    font-size: 16px;
+    padding: 5px;
+  }
+  #savedCalculations {
+    font-size: 16px;
+    padding: 5px;
+    
+  }
