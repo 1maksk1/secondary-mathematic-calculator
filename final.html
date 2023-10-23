@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECONDARY MATHEMATICS CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SECONDARY MATHEMATICS CALCULATOR</h1>
+    <div class="calculator-container">
+        <!-- Subtraction Calculator -->
+        
+<!-- Subtraction Calculator -->
+<div class="calculator">
+    <h2 style="font-size: 10px;">Subtraction Calculator</h2>
+    <input type="number" id="subNum1" placeholder="Enter 1st number">
+    <br>
+    <input type="number" id="subNum2" placeholder="Enter 2nd number">
+    <br>
+    <button onclick="performSubtraction()">Calculate</button>
+    <h3 style="font-size: 10px;">Result:</h3>
+    <div class="result" id="subResult"></div>
+    <!-- Add Clear button for subtraction -->
+    <button class="clear-button" onclick="clearSubtraction()">Clear</button>
+</div>
+
+
+
+        <!-- Step-by-Step Multiplication Calculator -->
+        <div class="calculator">
+            <h2 style="font-size: 10px;">Step-by-Step Multiplication</h2>
+            <label for="mulNum1" style="font-size: 10px;">Enter 1st number:</label>
+            <input type="text" id="mulNum1"><br>
+            <label for "mulNum2" style="font-size: 10px;">Enter 2nd number:</label>
+            <input type="text" id="mulNum2"><br>
+            <button onclick="performMultiplication()">Multiply</button>
+            <button class="clear-button" onclick="clearSteps('mulSteps')">Clear</button>
+            <h3 style="font-size: 10px;">Step-by-Step Multiplication:</h3>
+            <div id="mulSteps" class="step-explanation"></div>
+        </div>
+
+        <!-- Step-by-Step Addition Calculator -->
+        <div class="calculator">
+            <h2 style="font-size: 10px;">Add Columns Calculator</h2>
+            <form id="addForm">
+                <label for="addNum1" style="font-size: 10px;">Enter 1st number:</label>
+                <input type="number" id="addNum1" name="addNum1" required>
+                <br>
+                <label for="addNum2" style="font-size: 10px;">Enter 2nd number:</label>
+                <input type="number" id="addNum2" name="addNum2" required>
+                <br>
+                <button type="button" onclick="performAddition()">Add</button>
+            </form>
+            <button class="clear-button" onclick="clearSteps('addSteps')">Clear</button>
+            <h3 style="font-size: 10px;">Step-by-Step Addition:</h3>
+            <div id="addSteps" class="step-explanation"></div>
+        </div>
+
+        <!-- Division Steps Calculator -->
+       <!-- Division Steps Calculator -->
+<!-- Division Steps Calculator -->
+<div class="calculator">
+    <h2 style="font-size: 10px;">Division Steps Calculator</h2>
+    <label for="dividend" style="font-size: 10px;">Enter dividend:</label>
+    <input type="number" id="dividend">
+    <br>
+    <label for "divisor" style="font-size: 10px;">Enter divisor:</label>
+    <input type="number" id="divisor">
+    <button onclick="calculateDivision()">Calculate</button>
+    <h3 style="font-size: 10px;">Step-by-Step Division:</h3>
+    <textarea id="divisionSteps" readonly></textarea>
+    <!-- Add Clear button for division -->
+    <button class="clear-button" onclick="clearDivision()">Clear</button>
+</div>
+
+
+    </div>
+
+    <script src="function.js"></script>
+</body>  
+</html>
